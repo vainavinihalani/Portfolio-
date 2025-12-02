@@ -1,0 +1,85 @@
+/* Title */
+@font-face {
+  font-family: "Miki";
+  src: url("font/MikiesChristmasList.ttf") format("trueType");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "afacad";
+  src: url("font/Afacad-VariableFont_wght.ttf") format("trueType");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Body Font */
+body {
+  font-family: "afacad", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Center wrapper */
+.title-wrapper {
+  width: 100%;
+  text-align: center; 
+}
+
+/* H1 with underline */
+.curve-title {
+  font-family: "Miki", sans-serif;
+  font-size: 38px;
+  color: blue;
+  font-weight: 150;
+  position: relative;
+  display: inline-block; 
+  margin: 20px auto 0;
+}
+
+/* Curved underline */
+.curve-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 170%;
+  height: 40px;
+  background-image: url("assets/underline.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Full container for image */
+.image-full-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 30px; 
+  margin-top: 38px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+/* Image sizes */
+.mona-image {
+  width: 20.5%;
+  height: auto;
+}
+
+.wine-image {
+  width: 37.5%;
+  height: auto;
+}
+
+
+.text-image {
+  margin-top: 15%;
+  width: 35%;
+  height: auto;
+}
+
+
+

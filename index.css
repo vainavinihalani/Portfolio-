@@ -1,0 +1,288 @@
+
+.page-wrapper {
+  transform: scale(1.18);
+  transform-origin: top center;
+  -webkit-transform: scale(1.18);
+  -moz-transform: scale(1.18);
+  -ms-transform: scale(1.18);
+  -o-transform: scale(1.18);
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  background-color: #ffffff !important;
+  z-index: 1000;
+  padding: 12px 0;
+}
+.navbar .container {
+  max-width: 1200px; 
+  padding-left: 20px;
+  padding-right: 20px;
+} 
+.navbar .nav-link {
+  position: relative;
+  color: #000 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+} 
+.navbar .nav-link:hover {
+  color: #0306ff !important;
+} /* Animated underline */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #0306ff;
+  transition: width 0.3s ease;
+} 
+.navbar .nav-link:hover::after {
+  width: 100%;
+} 
+.nav-left {
+  margin-left: 0; 
+  display: flex;
+  gap: 20px; 
+} 
+.nav-right {
+  margin-left: auto; 
+} 
+.container-image {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+} 
+.hero-section {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  margin-top: -30px; 
+}
+.about-section {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  margin-top: -240px; 
+}
+.colleagues-section {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  margin-top: -40px; 
+}
+
+.work-section {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  margin-top: -40px; 
+  margin-left: -50px;
+}
+
+.story-section {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  margin-top: 1200px; 
+}
+
+.contact-section {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  margin-top: -180px; }
+
+
+
+/* Main wrapper */
+.work-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 80px;
+  padding: 0;
+
+  background-image: url("assets/fourth.png");
+  background-size: cover;    
+  background-repeat: no-repeat;
+  background-position: top center; 
+  height: auto;  
+  aspect-ratio: 16/9; 
+}
+
+
+/* Overlay clickable image */
+.overlay-img {
+  position: absolute;
+  top: 64%; 
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img img {
+  width: 320px;
+  height: auto;
+  display: block;
+}
+
+.overlay-img2 {
+  position: absolute;
+  top: 74%;              
+  left: 45%;              
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img2 img {
+  width: 320px;           
+  height: auto;
+  display: block;
+}
+
+.overlay-img3 {
+  position: absolute;
+  top: 152%;              
+  left: 84%;              
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img3 img {
+  width: 600px;           
+  height: auto;
+  display: block;
+}
+
+.overlay-img4 {
+  position: absolute;
+  top: 79%;  
+  right: 59%;              
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img4 img {
+  width: 280px;           
+  height: auto;
+  display: block;
+}
+
+.overlay-img5 {
+  position: absolute;
+  top: 144%;  
+  left: 33%;              
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img5 img  {
+  width: 600px;          
+  height: auto;
+  display: block;
+}
+
+
+.overlay-img6 {
+  position: absolute;
+  top: 144%;  
+  left: 21%;              
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img6 img {
+  width: 300px;           
+  height: auto;
+  display: block;
+}
+
+.overlay-img7 {
+  position: absolute;
+  top: 212%;  
+  left: 18%;             
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img7 img {
+  width: 300px;           
+  height: auto;
+  display: block;
+}
+
+.overlay-img8 {
+  position: absolute;
+  top: 232%;  
+  left: 45%;              
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img8 img {
+  width: 300px;           
+  height: auto;
+  display: block;
+}
+
+.overlay-img9 {
+  position: absolute;
+  top: 245%;  
+  left: 83%;              
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlay-img9 img {
+  width: 500px;           
+  height: auto;
+  display: block;
+}
+
+
+
+
+/* Hover effects */
+.cover-img  {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cover-img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 20px ;
+  color: #0306ff;
+}
+
+.hotspot {
+  position: absolute;
+  top: 20%; left: 20%; 
+  width: 60%;
+  height: 60%;
+  cursor: pointer;
+  background: rgba(0,0,0,0); 
+}
+
+
+/* ===== SMOOTH SCROLLING ===== */
+html {
+  scroll-behavior: smooth;
+}
+.about -section {
+  scroll-margin-top: 10px; 
+}
